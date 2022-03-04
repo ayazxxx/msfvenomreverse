@@ -1,5 +1,4 @@
-# msfvenomreverse
-My simple JSP shell
+# MSFvenomReverse & Simple JSP Shell
+My simple Shells
 
 #|Genellikle Tomcat için kullandığım JSP shell
-
